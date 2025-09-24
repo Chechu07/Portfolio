@@ -13,16 +13,16 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
     color: var(--color-letters);
-    padding: 25px;
-    text-align: center;
-    
 }
+
+/*SECCION DEL HEADER ⬇️*/
 .header{
    width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 5px;
+   padding: 25px 0 50px 25px;
+   text-align: center; 
 }
 .name{
     padding: 5px;
@@ -48,6 +48,43 @@ body{
     align-items: center;
     padding: 5px;
 }
+/*SECCION DEL HEADER ⬆️*/
+
+/*SECCION PRESENTATION ⬇️*/
+
+.greeting-container{
+    display: flex;
+    margin-bottom: 10px;
+}
+.presentation h1{
+    font-size: 35px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.circle i{
+    margin: 4px;
+    margin-top: 25px;
+    font-size: 10px;
+    color: var(--color-primary);
+}
+.name-line{
+    display: flex;
+    align-items: baseline;
+    margin-top: 5px;
+}
+.line{
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+.name-line h2{
+    margin: 0 0 0 8px;
+    line-height: 1;
+}
+
+
+/*SECCION PRESENTATION ⬆️*/
 
 
 @media(max-width:440px){
