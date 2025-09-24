@@ -63,19 +63,6 @@ body{
 .text-container{
     flex:1;
 }
-.image-container{
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-right:100px ;
-    gap: 10;
-    top: -40px;
-
-}
-.image-container img{
-    max-width: 200px;
-    width: 100%; 
-}
 .greeting-container{
   position: relative;
   transform: translateY(-70px);
@@ -118,10 +105,7 @@ body{
     font-weight: 600;
     margin-top: 10px;
 }
-/*SECCION PRESENTATION ⬆️*/
 
-
-/*BUTTON CONTAINER ⬇️*/
 .button-container{
     margin-left:70px;
     margin-top: -40px;
@@ -146,9 +130,29 @@ body{
     background-color: var(--background-color);
     border:1px solid  var(--color-primary);
 }
-/*BUTTON CONTAINER ⬆️*/
 
-
+.image-container{
+    position: relative;
+    display: inline-block;
+    margin-right:100px ;
+     gap: 10;
+    top: -40px
+}
+.image-container img{
+    display: block;
+    max-width: 200px;
+    width: 100%; 
+}
+.fa-angles-left{
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
+.fa-angles-right{
+    position: absolute;
+    top:0;
+    right: -20px;
+}
 
 
 @media(max-width:440px){
