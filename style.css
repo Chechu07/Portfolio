@@ -124,9 +124,7 @@ body{
 /*BUTTON CONTAINER ⬇️*/
 .button-container{
     margin-left:70px;
-  transform: translateY(-70px);
-
-    /* margin-top: -55px; */
+    margin-top: -40px;
 }
 .button-container button{
     font-size: 16px;
