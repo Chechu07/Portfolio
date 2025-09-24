@@ -22,7 +22,7 @@ body{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 25px 0 50px 25px;
+   padding: 35px 0 50px 35px;
    text-align: center; 
 }
 .name{
@@ -53,16 +53,44 @@ body{
 
 
 /*SECCION PRESENTATION ⬇️*/
+.presentation .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 0 40px 0;
+}
+.text-container{
+    flex:1;
+}
+.image-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right:100px ;
+    gap: 10;
+    top: -40px;
+
+}
+.image-container img{
+    max-width: 200px;
+    width: 100%; 
+}
 .greeting-container{
+  position: relative;
+  transform: translateY(-70px);
+}
+.greeting{
     display: flex;
     margin-bottom: 10px;
 }
 .presentation h1{
     font-size: 35px;
-    margin-left: 40px;
+    margin-left: 70px;
+    right: 30px;
     font-weight: bold;
 }
-.circle i{
+.presentation i{
     margin: 4px;
     margin-top: 25px;
     font-size: 10px;
@@ -75,7 +103,7 @@ body{
 }
 .line{
     display: inline-block;
-    width: 60px;
+    width: 80px;
     height: 2px;
     background-color: var(--color-primary);
 }
@@ -83,11 +111,10 @@ body{
     margin: 0 0 0 8px;
     line-height: 1;
     font-weight: 300;
-
 }
 .professional{
     font-size: 25px;
-    margin-left: 40px;
+    margin-left: 70px;
     font-weight: 600;
     margin-top: 10px;
 }
@@ -96,8 +123,10 @@ body{
 
 /*BUTTON CONTAINER ⬇️*/
 .button-container{
-    margin-left:40px;
-    margin-top: 35px;
+    margin-left:70px;
+  transform: translateY(-70px);
+
+    /* margin-top: -55px; */
 }
 .button-container button{
     font-size: 16px;
