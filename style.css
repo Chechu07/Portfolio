@@ -3,6 +3,8 @@
     --color-letters: #FFFFFF;
     --color-primary:#FF6A00;
     --color-hover-primary: #ec8033e3;
+    --secondary-letters: #505C67;
+    --background-color-secondary:#162027;
 }
 
 *{
@@ -22,7 +24,7 @@ body{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 35px 0 50px 35px;
+   padding: 35px 0 25px 35px;
    text-align: center; 
 }
 .name{
@@ -39,7 +41,7 @@ body{
 .list{
     margin: 10px;
     transition: border-bottom 0.3s;
-     border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     list-style-type: none;
 }
 .list:hover{
@@ -48,7 +50,6 @@ body{
 .list-header{
     text-decoration: none;
     color: var(--color-letters);
-
 }
 .menu{
     cursor: pointer;
@@ -65,7 +66,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding: 0 0 40px 0;
+    /* padding: 0 0 40px 0; */
 }
 .text-container{
     flex:1;
@@ -78,13 +79,13 @@ body{
     display: flex;
     margin-bottom: 10px;
 }
-.presentation h1{
+.greeting-hello{
     font-size: 35px;
     margin-left: 70px;
     right: 30px;
     font-weight: bold;
 }
-.presentation i{
+.fa-circle{
     margin: 4px;
     margin-top: 25px;
     font-size: 10px;
@@ -101,9 +102,10 @@ body{
     height: 2px;
     background-color: var(--color-primary);
 }
-.name-line h2{
-    margin: 0 0 0 8px;
+.my-name{
+    margin: 0 0 0 5px;
     line-height: 1;
+    font-size: 25px;
     font-weight: 300;
 }
 .professional{
@@ -117,7 +119,7 @@ body{
     margin-left:70px;
     margin-top: -40px;
 }
-.button-container button{
+.button-container .my-projects, .button-container .my-cv{
     font-size: 16px;
     padding: 15px;
     font-weight: 500;
@@ -142,24 +144,57 @@ body{
     position: relative;
     display: inline-block;
     margin-right:100px ;
-     gap: 10;
-    top: -40px
+    gap: 10;
+    margin-top: 20px;
 }
-.image-container img{
+.personal-image{
     display: block;
     max-width: 200px;
-    width: 100%; 
+    width: 100%;
 }
 .fa-angles-left{
     position: absolute;
     bottom: 0;
     left: -20px;
+    color: var(--color-primary);
 }
 .fa-angles-right{
     position: absolute;
     top:0;
     right: -20px;
+    color: var(--color-primary);
 }
+
+
+.skills{
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+    background-color: var(--background-color-secondary);
+}
+.skills-list{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    list-style-type: none;
+    color: var(--secondary-letters);
+}
+.skill-item{
+    text-decoration: none;
+    margin: 15px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width:440px){
