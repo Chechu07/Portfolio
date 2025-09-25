@@ -31,17 +31,24 @@ body{
     font-weight: bold;
 }
 .portfolio-data{
-    display: flex;  
     text-align: center;
-    cursor: pointer;
 }
-.portfolio-data p{
+.list-about-me{
+    display: flex;
+}
+.list{
     margin: 10px;
     transition: border-bottom 0.3s;
-    border-bottom: 2px solid transparent;
+     border-bottom: 2px solid transparent;
+    list-style-type: none;
 }
-.portfolio-data p:hover{
+.list:hover{
     border-bottom: 2px solid var(--color-primary);
+}
+.list-header{
+    text-decoration: none;
+    color: var(--color-letters);
+
 }
 .menu{
     cursor: pointer;
