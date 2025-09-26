@@ -196,24 +196,71 @@ body{
 
 .container-about-me{
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    padding: 25px;
     
 }
+.development-skills{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+/* /* .development-skills::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    width: 2px;
+    height: 100%;
+     z-index: 0;
+    background-color: var(--color-primary); 
+} */
 .item-about{
+    position: relative;
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 10px;
+    margin-bottom: 30px; 
+}
+.item-about::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 80%;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: var(--color-primary);
 }
 .item-about .fa-laptop-code,
 .item-about .fa-mobile-screen,
 .item-about .fa-pen-ruler{
-    font-size: 50px;
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
     color: var(--color-primary);
 }
+.item-about .timeline-dot{
+    position: absolute;
+    left: -5px;
+    top: -25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    z-index: 1;
+}
+
+
 .about-title{
     font-size: 30px;
     font-weight: 500;
-    padding: 5px;
+    padding: 15px;
     text-align: center; 
 }
 
