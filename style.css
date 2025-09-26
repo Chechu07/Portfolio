@@ -261,6 +261,34 @@ body{
 }
 
 
+.achievements{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.data{
+   margin: 10px;
+}
+.number{
+    font-size: 25px;
+    padding: 5px;
+}
+.fa-briefcase,
+.fa-user-check,
+.fa-award{
+    font-size: 30px;
+}
+.data .fa-briefcase,
+.data .fa-user-check,
+.data .fa-award{
+    color: var(--color-primary);
+}
+.label{
+    margin: 20px;
+}
+
+
 
 
 
