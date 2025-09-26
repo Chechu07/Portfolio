@@ -24,7 +24,7 @@ body{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 35px 0 25px 35px;
+   padding: 25px 70px 25px 70px;
    text-align: center; 
 }
 .name{
@@ -51,10 +51,11 @@ body{
     text-decoration: none;
     color: var(--color-letters);
 }
+
 .menu{
     cursor: pointer;
     display: none;
-    align-items: center;
+    align-items: center; 
     padding: 5px;
 }
 /*SECCION DEL HEADER ⬆️*/
@@ -64,16 +65,18 @@ body{
 .presentation .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    /* padding: 0 0 40px 0; */
+    justify-content: flex-start;
+    /* justify-content: space-between; */
+    /* gap: 40px; */
+    gap: 200px;
 }
-.text-container{
-    flex:1;
-}
+/* .text-container{
+    /* flex:1; 
+} */
 .greeting-container{
   position: relative;
-  transform: translateY(-70px);
+  transform: translateY(-60px);
+  margin-left: 50px;
 }
 .greeting{
     display: flex;
@@ -82,7 +85,6 @@ body{
 .greeting-hello{
     font-size: 35px;
     margin-left: 70px;
-    right: 30px;
     font-weight: bold;
 }
 .fa-circle{
@@ -98,7 +100,7 @@ body{
 }
 .line{
     display: inline-block;
-    width: 80px;
+    width: 90px;
     height: 2px;
     background-color: var(--color-primary);
 }
@@ -116,7 +118,7 @@ body{
 }
 
 .button-container{
-    margin-left:70px;
+    margin-left:115px;
     margin-top: -40px;
 }
 .button-container .my-projects, .button-container .my-cv{
@@ -124,6 +126,7 @@ body{
     padding: 15px;
     font-weight: 500;
     margin-right: 25px;
+    border-radius: 5px;
     cursor: pointer;
     color: var(--color-letters);
 }
@@ -143,9 +146,13 @@ body{
 .image-container{
     position: relative;
     display: inline-block;
-    margin-right:100px ;
-    gap: 10;
-    margin-top: 20px;
+    /* margin-right:80px ; */
+    /* margin-left: 40%; */
+    /* gap: 10; */
+    /* margin-top: 20px; */
+    margin-left: auto;   
+    margin-right: auto;  
+    margin-top: 10px;
 }
 .personal-image{
     display: block;
@@ -167,27 +174,48 @@ body{
 
 
 .skills{
-    padding-top: 10px;
-    padding-bottom: 10px;
-   
+    padding: 10px;   
     background-color: var(--background-color-secondary);
 }
 .skills-list{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items:center ;
     list-style-type: none;
+    padding-left: 10px;
+    padding-right: 60px;
+    flex-wrap: wrap;
     color: var(--secondary-letters);
 }
 .skill-item{
     text-decoration: none;
-    margin: 15px;
-   
+    /* margin: 55px; */
 }
 
 
 
-
+.container-about-me{
+    display: flex;
+    justify-content: space-around
+    
+}
+.item-about{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.item-about .fa-laptop-code,
+.item-about .fa-mobile-screen,
+.item-about .fa-pen-ruler{
+    font-size: 50px;
+    color: var(--color-primary);
+}
+.about-title{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center; 
+}
 
 
 
