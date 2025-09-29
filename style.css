@@ -483,6 +483,41 @@ body{
 
 
 
+.work-card-salad{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: row-reverse;
+    gap: 25px;
+}
+.project-title-salad{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-right: 15%;
+}
+.text-image-salad{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 25px;
+    /* display: flex;
+    align-items: flex-start; */
+    /* gap: 215px; */
+}
+.project-salad{
+    font-weight: 300;
+    max-width: 400px;
+    text-align: right;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+.image-salad{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
 
 
 
