@@ -1,0 +1,119 @@
+
+.skills{
+    padding: 10px;   
+    background-color: var(--background-color-secondary);
+}
+.skills-list{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 60px;
+    flex-wrap: wrap;
+    color: var(--secondary-letters);
+}
+.skill-item{
+    text-decoration: none;
+}
+
+.container-about-me{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    
+}
+.development-skills{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+.item-about{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 30px; 
+}
+.item-about::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 80%;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: var(--color-primary);
+}
+.item-about .fa-laptop-code,
+.item-about .fa-mobile-screen,
+.item-about .fa-pen-ruler{
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+    color: var(--color-primary);
+}
+.item-about .timeline-dot{
+    position: absolute;
+    left: -5px;
+    top: -25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    z-index: 1;
+}
+
+
+.about-title{
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 15px;
+    text-align: center; 
+}
+.about-title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+}
+.about-text{
+    padding: 5px;
+    margin-top: 25px;
+}
+.achievements{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.data{
+   margin: 10px;
+}
+.number{
+    font-size: 25px;
+    padding: 5px;
+}
+.fa-briefcase,
+.fa-user-check,
+.fa-award{
+    font-size: 30px;
+}
+.data .fa-briefcase,
+.data .fa-user-check,
+.data .fa-award{
+    color: var(--color-primary);
+}
+.label{
+    margin: 20px;
+}

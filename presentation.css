@@ -1,0 +1,101 @@
+.presentation .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 200px;
+}
+
+.greeting-container{
+  position: relative;
+  transform: translateY(-60px);
+  margin-left: 50px;
+}
+.greeting{
+    display: flex;
+    margin-bottom: 10px;
+}
+.greeting-hello{
+    font-size: 35px;
+    margin-left: 70px;
+    font-weight: bold;
+}
+.fa-circle{
+    margin: 4px;
+    margin-top: 25px;
+    font-size: 10px;
+    color: var(--color-primary);
+}
+.name-line{
+    display: flex;
+    align-items: baseline;
+    margin-top: 5px;
+}
+.line{
+    display: inline-block;
+    width: 90px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+.my-name{
+    margin: 0 0 0 5px;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: 300;
+}
+.professional{
+    font-size: 25px;
+    margin-left: 70px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.button-container{
+    margin-left:115px;
+    margin-top: -40px;
+}
+.button-container .my-projects, .button-container .my-cv{
+    font-size: 16px;
+    padding: 15px;
+    font-weight: 500;
+    margin-right: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--color-letters);
+}
+.my-projects{
+    border: var(--color-primary);
+    background-color: var(--color-primary);
+    
+}
+.my-projects:hover{
+    background-color: var(--color-hover-primary);
+}
+.my-cv{
+    background-color: var(--background-color);
+    border:1px solid  var(--color-primary);
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+    margin-left: auto;   
+    margin-right: auto;  
+    margin-top: 10px;
+}
+.personal-image{
+    display: block;
+    max-width: 200px;
+    width: 100%;
+}
+.fa-angles-left{
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    color: var(--color-primary);
+}
+.fa-angles-right{
+    position: absolute;
+    top:0;
+    right: -20px;
+    color: var(--color-primary);
+}

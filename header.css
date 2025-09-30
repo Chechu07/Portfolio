@@ -1,0 +1,39 @@
+.header{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 25px 70px 25px 70px;
+   text-align: center; 
+}
+.name{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.portfolio-data{
+    text-align: center;
+}
+.list-about-me{
+    display: flex;
+}
+.list{
+    margin: 10px;
+    transition: border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+    list-style-type: none;
+}
+.list:hover{
+    border-bottom: 2px solid var(--color-primary);
+}
+.list-header{
+    text-decoration: none;
+    color: var(--color-letters);
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+    align-items: center; 
+    padding: 5px;
+}
