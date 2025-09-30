@@ -24,7 +24,7 @@ body{
 
 
 
-
+/* 
 @media(max-width:440px){
    .header{
       justify-content: flex-start;
@@ -35,4 +35,4 @@ body{
    .menu{
     display: flex;
    }
-}
+} */
