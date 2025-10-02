@@ -14,7 +14,8 @@
 .about__skills{
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    /* align-items: center; */
     gap: 20px;
     padding: 10px;
     margin-bottom: 30px; 
@@ -30,10 +31,22 @@
     z-index: 0;
     background-color: var(--color-primary);
 }
+.about__icon{
+  width: 45px;   
+  height: 45px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__developer{
+  margin: 0;
+  font-size: 16px;
+}
+
 .about__skills .about__icon{
     position: relative;
     z-index: 1;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--color-primary);
 }
 .about__skills .about__dot{
@@ -46,8 +59,6 @@
     background-color: var(--color-primary);
     z-index: 1;
 }
-
-
 .about__title{
     position: relative;
     font-size: 30px;
@@ -87,17 +98,7 @@
 .achievements__icon{
     font-size: 30px;
     color: var(--color-primary);
-
 }
-/* .data .fa-briefcase,
-.data .fa-user-check,
-.data .fa-award{
-    color: var(--color-primary);
-} */
-/* .achievements__icon{
-    color: var(--color-primary);
-} */
-
 .achievements__label{
     margin: 20px;
 }
