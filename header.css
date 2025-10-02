@@ -6,34 +6,27 @@
    padding: 25px 70px 25px 70px;
    text-align: center; 
 }
-.name{
+.header__name{
     padding: 5px;
     font-size: 20px;
     font-weight: bold;
 }
-.portfolio-data{
+.header__nav{
     text-align: center;
 }
-.list-about-me{
+.header__list{
     display: flex;
 }
-.list{
+.header__item{
     margin: 10px;
     transition: border-bottom 0.3s;
     border-bottom: 2px solid transparent;
     list-style-type: none;
 }
-.list:hover{
+.header__item:hover{
     border-bottom: 2px solid var(--color-primary);
 }
-.list-header{
+.header__link{
     text-decoration: none;
     color: var(--color-letters);
-}
-
-.menu{
-    cursor: pointer;
-    display: none;
-    align-items: center; 
-    padding: 5px;
 }
