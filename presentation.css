@@ -1,59 +1,59 @@
-.presentation .container{
+.presentation{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 200px;
+    justify-content: center;
+    gap: 400px;
 }
-
-.greeting-container{
+.presentation__intro{
   position: relative;
-  transform: translateY(-60px);
-  margin-left: 50px;
+  transform: translateY(-20px);
+  text-align: left;
 }
-.greeting{
+.presentation__greeting{
     display: flex;
     margin-bottom: 10px;
 }
-.greeting-hello{
+.presentation__hello{
     font-size: 35px;
     margin-left: 70px;
     font-weight: bold;
 }
-.fa-circle{
+.presentation__circle{
     margin: 4px;
     margin-top: 25px;
     font-size: 10px;
     color: var(--color-primary);
 }
-.name-line{
+.presentation__identity{
     display: flex;
     align-items: baseline;
     margin-top: 5px;
 }
-.line{
+.presentation__line{
     display: inline-block;
     width: 90px;
     height: 2px;
     background-color: var(--color-primary);
 }
-.my-name{
+.presentation__name{
     margin: 0 0 0 5px;
     line-height: 1;
     font-size: 25px;
     font-weight: 300;
 }
-.professional{
+.presentation__rol{
     font-size: 25px;
     margin-left: 70px;
     font-weight: 600;
     margin-top: 10px;
 }
-
-.button-container{
-    margin-left:115px;
-    margin-top: -40px;
+.presentation__buttons{
+    display: flex;
+    gap: 10px;
+    margin-top:20px;
+    margin-left: 70px;
 }
-.button-container .my-projects, .button-container .my-cv{
+.presentation__buttons .presentation__button--projects, .presentation__buttons .presentation__button--cv{
     font-size: 16px;
     padding: 15px;
     font-weight: 500;
@@ -62,38 +62,37 @@
     cursor: pointer;
     color: var(--color-letters);
 }
-.my-projects{
+.presentation__button--projects{
     border: var(--color-primary);
     background-color: var(--color-primary);
     
 }
-.my-projects:hover{
+.presentation__button--projects:hover{
     background-color: var(--color-hover-primary);
 }
-.my-cv{
+.presentation__button--cv{
     background-color: var(--background-color);
     border:1px solid  var(--color-primary);
 }
 
-.image-container{
+.presentation__image{
     position: relative;
     display: inline-block;
-    margin-left: auto;   
-    margin-right: auto;  
-    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
 }
-.personal-image{
+.presentation__profile{
     display: block;
     max-width: 200px;
     width: 100%;
 }
-.fa-angles-left{
+.presentation__icon--left{
     position: absolute;
     bottom: 0;
     left: -20px;
     color: var(--color-primary);
 }
-.fa-angles-right{
+.presentation__icon--right{
     position: absolute;
     top:0;
     right: -20px;
