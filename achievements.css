@@ -1,0 +1,20 @@
+.achievements{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.achievements__info{
+   margin: 10px;
+}
+.achievements__number{
+    font-size: 25px;
+    padding: 5px;
+}
+.achievements__icon{
+    font-size: 30px;
+    color: var(--color-primary);
+}
+.achievements__label{
+    margin: 20px;
+}
