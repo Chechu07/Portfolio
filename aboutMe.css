@@ -1,0 +1,103 @@
+.about__me{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    
+}
+.about__experiences{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+.about__skills{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 30px; 
+}
+.about__skills::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 80%;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: var(--color-primary);
+}
+.about__skills .about__icon{
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+    color: var(--color-primary);
+}
+.about__skills .about__dot{
+    position: absolute;
+    left: -5px;
+    top: -25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    z-index: 1;
+}
+
+
+.about__title{
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 15px;
+    text-align: center; 
+}
+.about__title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+}
+.about__text{
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.achievements{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.achievements__info{
+   margin: 10px;
+}
+.achievements__number{
+    font-size: 25px;
+    padding: 5px;
+}
+.achievements__icon{
+    font-size: 30px;
+    color: var(--color-primary);
+
+}
+/* .data .fa-briefcase,
+.data .fa-user-check,
+.data .fa-award{
+    color: var(--color-primary);
+} */
+/* .achievements__icon{
+    color: var(--color-primary);
+} */
+
+.achievements__label{
+    margin: 20px;
+}
