@@ -47,13 +47,13 @@
     font-weight: 600;
     margin-top: 10px;
 }
-.presentation__buttons{
+.presentation__actions{
     display: flex;
     gap: 10px;
     margin-top:20px;
     margin-left: 70px;
 }
-.presentation__buttons .presentation__button--projects, .presentation__buttons .presentation__button--cv{
+.presentation__actions .presentation__projects, .presentation__actions .presentation__cv{
     font-size: 16px;
     padding: 15px;
     font-weight: 500;
@@ -62,15 +62,15 @@
     cursor: pointer;
     color: var(--color-letters);
 }
-.presentation__button--projects{
+.presentation__projects{
     border: var(--color-primary);
     background-color: var(--color-primary);
     
 }
-.presentation__button--projects:hover{
+.presentation__projects:hover{
     background-color: var(--color-hover-primary);
 }
-.presentation__button--cv{
+.presentation__cv{
     background-color: var(--background-color);
     border:1px solid  var(--color-primary);
 }

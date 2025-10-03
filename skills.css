@@ -12,6 +12,6 @@
     flex-wrap: wrap;
     color: var(--secondary-letters);
 }
-.skill__item{
+.skills__item{
     text-decoration: none;
 }

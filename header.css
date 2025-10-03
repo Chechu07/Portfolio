@@ -11,22 +11,22 @@
     font-size: 20px;
     font-weight: bold;
 }
-.header__nav{
+.menu{
     text-align: center;
 }
-.header__list{
+.menu__list{
     display: flex;
 }
-.header__item{
+.menu__item{
     margin: 10px;
     transition: border-bottom 0.3s;
     border-bottom: 2px solid transparent;
     list-style-type: none;
 }
-.header__item:hover{
+.menu__item:hover{
     border-bottom: 2px solid var(--color-primary);
 }
-.header__link{
+.menu__link{
     text-decoration: none;
     color: var(--color-letters);
 }
