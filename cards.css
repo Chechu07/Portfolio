@@ -1,4 +1,4 @@
-.project-card{
+.card{
     position: relative;
     font-size: 30px;
     font-weight: 500;
@@ -6,7 +6,7 @@
     padding: 15px;
     margin: 70px 0 30px 0px;
 }
-.project-card::before{
+.card::before{
     content: '';
     position: absolute;
     width: 3px;
@@ -18,7 +18,7 @@
     transform: translateX(-50%);
     background-color: var(--color-primary); 
 }
-.project-card::after{
+.card::after{
    content: '';
    position: absolute;
    left: 50%;
@@ -30,13 +30,13 @@
    background-color: var(--color-primary);
 }
 
-.container-app{
+.card__container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;  
 }
-.work-card{
+.card__work{
     display: flex;
     max-width: 900px;
     margin: 0 auto;
@@ -44,43 +44,43 @@
     flex-direction: column;
     gap: 25px;
 }
-
-.project-title-bus{
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 15%;
-}
-.tech-list{
-    display: flex;
-    gap: 12px;
-    padding: 0;
-    margin: 0;
-    list-style: none; 
-}
-.tech-item{
-    padding: 10px 15px;
-    font-size: 0.9rem;
-    border: 1px solid var(--secondary-letters);
-    border-radius: 30px;
-}
-.project-container{
+.card__project{
     display: flex;
     align-items: center;
     gap: 40px;
 }
-.project-text{
+.card__box{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
     flex:1;
 }
-.text-image-container{
+
+.card__title--bus{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 15%;
+}
+.card__list{
+    display: flex;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+.card__item{
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border: 1px solid var(--secondary-letters);
+    border-radius: 30px;
+}
+.card__image--container{
     display: flex;
     align-items: flex-start;
     gap: 215px;
 }
-.project-description{
+.card__description{
     font-weight: 300;
     max-width: 400px;
     text-align: left;
@@ -88,17 +88,23 @@
     margin: 20px 0;
     line-height: 1.5;
 }
-.image-bus{
+.card__img{
     width: 250px;
     height: auto;
     border-radius: 8px;
 }
-.btn-icon{
+.card__btn--github{
+    background-color: var(--color-primary);
+}
+.card__btn--github:hover{
+    background-color: var(--color-hover-primary);
+}
+.card__actions{
     display: flex;
     gap: 20px;
 }
-.btn-github,
-.btn-preview{
+.card__btn--github,
+.card__btn--preview{
     font-size: 1rem;
     font-weight: 600;
     padding: 10px 20px;
@@ -106,24 +112,17 @@
     cursor: pointer;
     color: var(--color-letters);
 }
-
-.btn-github{
-    background-color: var(--color-primary);
-}
-.btn-github:hover{
-    background-color: var(--color-hover-primary);
-}
-.btn-preview{
+.card__btn--preview{
    position: relative;
    display: flex;
    align-items: center;
    gap: 10px;
    background-color: var(--background-color);
 }
-.btn-preview:hover{
+.card__btn--preview:hover{
     background-color: var(--secondary-letters);
 }
-.btn-preview::before{
+.card__btn--preview::before{
     content: '';
     position: absolute;
     bottom: -5px;
@@ -134,7 +133,7 @@
     transform: translateX(-50%);
     background-color: var(--color-primary);
 }
-.btn-preview .fa-arrow-up-right{
+.card__btn--preview .card__icon--square{
     font-size: 1rem;
 }
 
