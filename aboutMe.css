@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     padding: 25px;
-    
 }
 .about-me__experiences{
     position: relative;
@@ -31,15 +30,15 @@
     background-color: var(--color-primary);
 }
 .about-me__icon{
-  width: 45px;   
-  height: 45px;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 45px;   
+    height: 45px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .about-me__developer{
-  margin: 0;
-  font-size: 16px;
+    margin: 0;
+    font-size: 16px;
 }
 
 .about-me__skills .about-me__icon{
@@ -79,4 +78,25 @@
 .about-me__text{
     padding: 5px;
     margin-top: 25px;
+}
+
+@media(max-width:375px){
+    .about-me{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .about-me__description{
+       order: 1;
+       margin-bottom: 20px; 
+    }
+    .about-me__experiences{
+        order: 2;
+        padding-left: 0;
+    }
+    .about-me__text{
+       font-size: 25px;
+       font-weight: 300;
+       text-align: center;
+    }
 }
