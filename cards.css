@@ -56,7 +56,6 @@
     gap: 15px;
     flex:1;
 }
-
 .card__title{
     font-size: 1.5rem;
     font-weight: 400;
@@ -81,7 +80,6 @@
     gap: 215px;
 }
 .card__description{
-    font-weight: 300;
     max-width: 400px;
     text-align: left;
     font-weight: 300;
@@ -135,6 +133,9 @@
 .card__btn--preview .card__icon--square{
     font-size: 1rem;
 }
+
+
+
 .card__salad{
     display: flex;
     flex-direction: row-reverse;
@@ -198,4 +199,63 @@
     justify-content: flex-end;
     gap: 20px;
     margin-top: -70px;
+}
+
+
+@media(max-width:375px){
+    .card__work,
+    .card__salad{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .card__box{
+       display:flex;
+       align-items: center;
+       justify-content: center;
+    } 
+    .card__title{
+       margin-top: 25%;
+    }
+    .card__list,
+    .card__roster{
+       display:grid;
+       grid-template-columns: repeat(2, 1fr);
+       margin: 10px;
+       justify-content: center;
+    }
+    .card__item,
+    .card__also{
+        font-size: 20px;
+    }
+    .card__image,
+    .card__picture{
+       display: block;
+       text-align: center;
+       margin-top: 15px;
+    }
+    .card__description,
+    .card__text{
+       margin:  0;
+    }
+    .card__img{
+       width: 150px;
+       height: auto;
+       border-radius: 8px;
+       margin: 15px auto; 
+       display: block; 
+    } 
+
+
+    .card__schema{
+        align-items: center;
+        text-align: center;
+    }
+    .card__subtitle{
+        text-align: center;
+    }
+    .card__conduct{
+       margin-top: 15px;
+       justify-content: center; 
+    }
 }

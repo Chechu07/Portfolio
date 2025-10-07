@@ -21,23 +21,17 @@
 
 @media(max-width:375px){
     .achievements{
-      /* display: flex; */
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
     }
     .achievements__info{
+      display: flex;
       margin: 10px;
-      flex:1 1 45%;
-      max-width: 45%;
+      align-items: center;
     }
-    /* .achievements__info:last-child{
-        flex-basis: 100%;
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-    } */
     .achievements__number{
+      margin: 5px;
       font-size: 20px;
     }
     .achievements__icon{
@@ -45,6 +39,8 @@
     }
     .achievements__label{
         display: block;
+        align-items: center;
         max-width: 70px;
+        margin-top: -5px;
     }
 }
