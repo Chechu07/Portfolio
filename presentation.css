@@ -98,3 +98,65 @@
     right: -20px;
     color: var(--color-primary);
 }
+
+@media(max-width:375px) {
+    .presentation{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+    }
+    .presentation__intro{
+       text-align: center;
+       transform: none;
+}
+    .presentation__hello{
+       font-size: 20px;
+       margin-left: 90px;
+       font-weight: bold;
+    }
+    .presentation__circle{
+       margin: 4px;
+       margin-top: 13px;
+       font-size: 7px;
+    }
+    .presentation__line{
+       width: 70px;
+    }
+    .presentation__name{
+       font-size: 16px;
+    }
+    .presentation__rol{
+       font-size: 20px;
+       margin-left: 35px;
+    }
+    .presentation__actions{
+       gap: 8px;
+       margin-top:20px;
+       margin-left: 40px;
+    }
+    .presentation__actions 
+    .presentation__projects, 
+    .presentation__actions .presentation__cv{
+       font-size: 13px;
+       padding: 10px;
+       margin-right: 10px;
+    }
+     .presentation__image{
+       margin: 0 auto;
+    }
+    .presentation__profile{
+        display: block;
+        margin: 0 auto;
+        max-width: 180px;
+        width: 70%;
+    }
+    .presentation__icon--left{
+       left: -10px;
+    }
+    .presentation__icon--right{
+       right: -10px;
+       margin-top: 15px;
+    }
+}

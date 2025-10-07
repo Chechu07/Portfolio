@@ -6,7 +6,6 @@
     --secondary-letters: #505C67;
     --background-color-secondary:#162027;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -17,22 +16,3 @@ body{
     background-color: var(--background-color);
     color: var(--color-letters);
 }
-
-
-
-
-
-
-
-/* 
-@media(max-width:440px){
-   .header{
-      justify-content: flex-start;
-   }
-   .name{
-    font-size: 13px;
-   }
-   .menu{
-    display: flex;
-   }
-} */

@@ -14,6 +14,12 @@
 .menu{
     text-align: center;
 }
+.menu__toggle{
+    display: none;
+}
+.menu__close{
+    display: none;
+}
 .menu__list{
     display: flex;
 }
@@ -30,3 +36,47 @@
     text-decoration: none;
     color: var(--color-letters);
 }
+
+
+
+@media(max-width:375px){
+    .header__name{
+       padding: 15px;
+       font-size: 15px;
+       font-weight: bold;
+    }
+    .menu__list{
+       position: absolute;
+       display: none;
+       flex-direction: column;
+       top: 50px;
+       right: 0;
+       width: 200px;
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       background-color: var(--background-color-secondary);
+    }
+    #menu:target{
+        display: flex;
+    }
+    .menu__close{
+        display: block;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .menu__close .menu__link{
+        display: block;
+        width: 100%;
+        font-size: 24px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .menu__toggle{ 
+        display: block;
+        font-size: 20px;
+        color: var(--color-letters);
+    }
+ 
+
+}
+
