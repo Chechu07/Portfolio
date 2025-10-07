@@ -18,3 +18,33 @@
 .achievements__label{
     margin: 20px;
 }
+
+@media(max-width:375px){
+    .achievements{
+      /* display: flex; */
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .achievements__info{
+      margin: 10px;
+      flex:1 1 45%;
+      max-width: 45%;
+    }
+    /* .achievements__info:last-child{
+        flex-basis: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    } */
+    .achievements__number{
+      font-size: 20px;
+    }
+    .achievements__icon{
+      font-size: 25px;
+    }
+    .achievements__label{
+        display: block;
+        max-width: 70px;
+    }
+}
