@@ -60,3 +60,42 @@
 .training__li{
     font-weight: 300;
 }
+
+
+@media(max-width:375px){
+    .training__title{
+      font-size: 22px; 
+    }
+    .training__title::before{
+      height: 50%;
+      margin-top: 35px;
+    }
+    .training__title::after{
+      width: 5px;
+      height: 5px;
+      top: 90px;
+    }
+    .training__list{
+      gap: 15px;
+      padding-top: 40px;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+    .training__box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.8rem;
+      gap: 10px;
+      padding: 10px;
+      margin: 0 auto;
+      width: 100%; 
+      max-width: 150px;
+      height: 80px;
+    }
+    .training__icon{
+      font-size: 20px;
+    }
+}
