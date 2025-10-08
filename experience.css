@@ -25,3 +25,30 @@
 .experience__item{
     margin: 20px;
 }
+
+
+@media(max-width:375px){
+    .experience{
+        text-align: center;
+        padding: 0 10px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .experience__title{
+      font-size: 1rem;
+      margin: 30px auto;
+      display: inline-block;
+    }
+    .experience__project{
+      font-size: 15px;
+      margin: 10px auto;
+    }
+    .experience__list{
+        padding: 0;
+        text-align: center;
+    }
+    .experience__item{
+      font-size: 13px;
+      margin: 10px 0;
+    }
+}
