@@ -70,3 +70,65 @@
     margin: 10px 0;
 }
 
+@media(max-width:375px){
+    .projects{
+      max-width: 90%;
+    }
+    .projects__item{
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .projects__title{
+      position: relative;
+      left: 35%;
+      transform: translateX(-50%);
+      text-align: center;
+      width: auto;
+      font-size: 18px;
+      margin: 15px 0 5px 0px;
+    }
+    .projects__title::before{
+      width: 120px;
+      height: 2px;
+      top: 45px;
+    }
+    .projects__body{
+      text-align: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .projects__text{
+      min-width: unset;
+      max-width: 150px;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+    .projects__feature-text{
+      min-width: unset;
+      max-width: 100%;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .projects__img{
+      align-items: center;
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      margin: 0 auto;
+    } 
+    .projects__features{
+      max-width: 150px;
+    }
+    .projects__features-heading{
+      font-size: 0.8rem;
+       padding: 8px;
+    }
+    .projects__feature-text{
+    
+      font-size: 0.7rem;
+    
+}
+}
