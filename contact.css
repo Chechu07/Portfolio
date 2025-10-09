@@ -50,16 +50,20 @@
 }
 
 @media(max-width:375px){
+   .contact{
+      padding: 10px;
+   }
    .contact__title{
       font-size: 22px; 
+      margin: 50px 0 15px 0;
    }
    .contact__title::before{
      width: 70px;
    }
    .contact__list{
      grid-template-columns: 1fr;
-     gap: 15px;
-     padding-top: 40px;
+     gap: 10px;
+     padding-top: -10px;
      justify-content: center;
    }
    .contact__box{
