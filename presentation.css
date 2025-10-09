@@ -1,4 +1,96 @@
-.presentation{
+.container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   max-width: 800px;
+}
+.presentation__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    gap: 10px;
+}
+.presentation__hello{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.presentation__circle{
+    font-size: 0.5rem;
+    transform: translateY(8px);
+    color: var(--color-primary);
+}
+.presentation__name{
+    font-size: 1.8rem;
+    font-weight: 300; 
+}
+.presentation__line{
+    display: inline-block;
+    width: 3.9em;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+.presentation__rol{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.presentation__actions{
+    display: flex;
+    gap: 20px;
+}
+.presentation__projects,  
+.presentation__cv{
+    font-size: 1.2rem;
+    padding: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--color-letters);
+}
+.presentation__projects{
+    border: none;
+    background-color: var(--color-primary);
+}
+.presentation__cv{
+    background-color: var(--background-color);
+    border:1px solid  var(--color-primary);
+}
+.presentation__image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentation__profile{
+    width: clamp(150px, 50%, 250px);
+    display: block;
+}
+.presentation__icon--left,
+.presentation__icon--right{
+    position: absolute;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+}
+.presentation__icon--left{
+    top: 0;
+    left: 0;
+    transform: translate(80%, 5%);
+}
+.presentation__icon--right{
+    bottom: 0;
+    right: 0;
+    transform: translate(-80%, -10%);
+}
+
+
+
+/* .presentation{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,4 +251,4 @@
        right: -10px;
        margin-top: 15px;
     }
-}
+} tenia lineas de codigo 162*/
