@@ -1,13 +1,6 @@
-.container{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0 auto;
-   max-width: 800px;
-}
- .skills{
+.skills{
+    padding: 10px;
     background-color: var(--background-color-secondary);
-   
 }
 .skills__list{
     display: flex;
