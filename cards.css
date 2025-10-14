@@ -1,4 +1,100 @@
-.card__projects{
+.card{
+    text-align: center;
+}
+.card__title{
+    position: relative;
+    font-size: 1.7rem;
+}
+.card__title::before{
+    position: absolute;
+    content: '';
+    width: 0.3rem;
+    left: 50%;
+    height: 1.9em;
+    z-index: 0;
+    top: 1.2em;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+}
+.card__title::after{
+   content: '';
+   position: absolute;
+   left: 50%;
+   width: 0.5rem;
+   height: 0.5rem;
+   top: 3.2em;
+   border-radius: 50%;
+   transform: translateX(-50%);
+   background-color: var(--color-primary);
+}
+.card__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__box{
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card__subtitle{
+    font-size: 1.4rem;
+    font-weight: 500;  
+}
+.card__list{
+    display: flex;
+    list-style: none; 
+}
+.card__tech{
+    font-size: 0.9rem;
+    border: 1px solid var(--secondary-letters);
+    border-radius: 30px;
+}
+.card__description{
+    text-align: left;
+    font-weight: 300;
+}
+.card__btn{
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: var(--color-letters);
+}
+.card__btn--github{
+    background-color: var(--color-primary);
+}
+.card__btn--preview{
+   position: relative;
+   background-color: var(--background-color);
+}
+
+.card__btn--preview::before{
+     content: '';
+    position: absolute;
+    bottom: 0.1em;
+    left: 50%;
+    width: 7rem;
+    height: 0.1875rem;
+    border-radius:0.125rem;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+} 
+.card__btn--preview .card__icon--square{
+    font-size: 1rem;
+} 
+/* .card__image{
+    width: 250px;
+    /* height: auto; 
+    border-radius: 8px;
+} */
+.card__img{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+/* .card__projects{
     position: relative;
     font-size: 30px;
     font-weight: 500;
@@ -288,4 +384,4 @@
        margin-top: 15px;
        justify-content: center; 
     }
-}
+} */
