@@ -1,86 +1,42 @@
 .contact{
-   display: flex;
-   max-width: 900px;
-   margin: 0 auto;
-   padding: 20px;
-   flex-direction: column;
-   gap: 25px;
+   margin-top: 4rem;
 }
 .contact__title{
    position: relative;
    text-align: center;
-   font-size: 30px;
+   font-size: 1.7rem;
    font-weight: 500;
-   padding: 15px;
-   margin: 70px 0 30px 0;
+   margin-bottom: 3.5rem;
 }
 .contact__title::before{
-   content: '';
    position: absolute;
-   bottom: 0;
+   content: '';
    left: 50%;
-   width: 80px;
-   height: 3px;
-   border-radius: 2px;
+   bottom: -0.5rem;
+   width: 6.5rem;
+   height: 0.2rem;
+   border-radius: 0.125rem;
    transform: translateX(-50%);
    background-color: var(--color-primary);
 }
 .contact__list{
-   list-style: none;
+   list-style: none; 
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 20px;
-   justify-content: stretch;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 1.5rem;
 }
 .contact__box{
    display: flex;
    align-items: center;
-   width: 100%;
-   padding: 15px;
-   gap: 30px;
+   padding: 0.6rem;
    border: 1px solid var(--secondary-letters);
    background-color: var(--background-color-secondary);
 }
 .contact__icon{
-   font-size: 30px;
+   font-size: 1.8rem;
+   margin-right: 0.9rem;
    color: var(--color-primary);
 }
 .contact__li{
-    font-weight: 300;
-}
-
-@media(max-width:375px){
-   .contact{
-      padding: 10px;
-   }
-   .contact__title{
-      font-size: 22px; 
-      margin: 50px 0 15px 0;
-   }
-   .contact__title::before{
-     width: 70px;
-   }
-   .contact__list{
-     grid-template-columns: 1fr;
-     gap: 10px;
-     padding-top: -10px;
-     justify-content: center;
-   }
-   .contact__box{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     font-size: 0.8rem;
-     gap: 10px;
-     padding: 10px;
-     margin: 0 auto;
-     width: 100%;
-     max-width: 150px;
-     height: 80px;
-   }
-   .contact__icon{
-     font-size: 20px;
-   }
+   font-weight: 300;
 }

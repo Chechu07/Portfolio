@@ -13,7 +13,7 @@
   content: '';
   left: 50%;
   bottom: -0.5rem;
-  width: clamp(5rem, 20vw, 9.5rem);
+  width: 9.5rem;
   height: 0.2rem;
   border-radius: 0.125rem;
   transform: translateX(-50%);
