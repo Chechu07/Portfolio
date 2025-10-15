@@ -4,6 +4,7 @@
 .card__title{
     position: relative;
     font-size: 1.7rem;
+    margin-bottom: 9rem;
 }
 .card__title::before{
     position: absolute;
@@ -32,6 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5rem;
 }
 .card__box{
      display: flex;
@@ -41,24 +43,32 @@
 .card__subtitle{
     font-size: 1.4rem;
     font-weight: 500;  
+    margin-bottom: 0.8rem;
+    line-height: 2;
 }
 .card__list{
     display: flex;
     list-style: none; 
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 .card__tech{
     font-size: 0.9rem;
     border: 1px solid var(--secondary-letters);
     border-radius: 30px;
+    padding: 8px;
 }
 .card__description{
     text-align: left;
     font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
 }
 .card__btn{
     font-size: 1rem;
     font-weight: 600;
     border: none;
+    padding: 0.6rem 1.2rem;
     cursor: pointer;
     color: var(--color-letters);
 }
@@ -84,16 +94,17 @@
 .card__btn--preview .card__icon--square{
     font-size: 1rem;
 } 
-/* .card__image{
-    width: 250px;
-    /* height: auto; 
-    border-radius: 8px;
-} */
 .card__img{
     width: 250px;
     height: auto;
     border-radius: 8px;
 }
+/* .card__image{
+    width: 250px;
+    /* height: auto; 
+    border-radius: 8px;
+} */
+
 /* .card__projects{
     position: relative;
     font-size: 30px;
