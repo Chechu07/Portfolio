@@ -94,7 +94,13 @@
     font-size: 1rem;
 } 
 .card__img{
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
+    min-width: 100px;
     height: auto;
     border-radius: 4px;
+    object-fit: cover;
+    /* width: 250px;
+    height: auto;
+    border-radius: 4px; */
 }
