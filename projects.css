@@ -21,7 +21,8 @@
 }
 .projects__body{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3rem;
 }
 .projects__text{
@@ -34,6 +35,7 @@
    height: auto;
    border-radius: 4px;
    object-fit: cover;
+   margin-top: 1.5rem;
 } 
 .projects__features-heading{
     font-size: 1.3rem;
@@ -41,8 +43,17 @@
     line-height: 2.5rem;
 }
 .projects__feature-text{
-    
     font-size: 1rem;
     font-weight: 100;
     line-height: 1.5rem;
+}
+
+@media(min-width:460px) {
+  .projects__body{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .projects__img{
+    text-align: center;
+  }
 }
