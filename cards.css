@@ -66,6 +66,9 @@
     margin-bottom: 1.2rem;
 }
 .card__actions{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
     margin-bottom: 1.2rem;
 }
 .card__btn{
@@ -110,13 +113,10 @@
   .card__item{
     flex-direction: row;
     justify-content: space-between;
+    border:none;
   }
   .card__image{
-    order: 1;
     margin-bottom: 1.5rem;
     align-self: center;
-  }
-  .card__actions{
-    order: 2;
   }
 }

@@ -4,7 +4,6 @@
    margin-right: auto;
    padding-left: 10px;
    padding-right: 10px;
-   background-color: purple;
 }
 .header{
    padding: 15px 0;
@@ -20,45 +19,87 @@
 }
 .menu__list{
    position: absolute;
-   display: none;
+   /* display: none; */
    flex-direction: column;
    gap: 1rem;
-   top: 100%;
+   top: 8%;
    right: 0;
-   background: var(--color-letters);
    padding: 1rem;
    list-style: none;
+   z-index: 1000;
+   opacity: 0;
+   transform: translateY(-10%);
+   pointer-events: none;
+   background: rgba(18, 18, 28, 0.95);
+   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+.menu__list.active{
+   display: flex;
+}
+.menu__close{
+   display: block;
+   text-align: right;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
 .menu__item{
-  transition: border-bottom 0.3s;
-  border-bottom: 2px solid transparent;
+  transition: color 0.3s;
+  border-bottom: none;
 }
 .menu__item:hover{
-   border-bottom: 2px solid var(--color-primary);
+   color: var(--color-primary);
+   border-bottom: none;
+   
+}
+.menu__checkbox{
+   display: none;
+}
+.menu__checkbox:checked ~ .menu__list{
+   opacity: 1;
+   transform: translateY(0);
+   pointer-events: auto;
+   /* display: flex; */
 }
 .menu__toggle{
-   display: block;
+   /* display: block; */
    font-size: 1.5rem;
    border: none;
    cursor: pointer;
    background: none;
-   color: var(--color-letters);
+  
 }
 .menu__link{
+  cursor: pointer;
   text-decoration: none;
   color: var(--color-letters);
+  transition: border-bottom 0.3s;
 }
 
 @media(min-width:460px){
+   .menu__item{
+     transition: border-bottom 0.3s;
+     border-bottom: 2px solid transparent;
+}
+   .menu__item:hover{
+     border-bottom: 2px solid var(--color-primary);
+}
    .menu__toggle{
       display: none;
    }
    .menu__list{
-      display: flex;
+      display: flex !important;
       position: static;
       flex-direction: row;
       background: none;
       padding: 0;
       gap: 20px;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
    }
+   .menu__close{
+      display: none;
+   }
+   
 }
