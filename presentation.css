@@ -1,9 +1,7 @@
-.presentation .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.presentation__content{
+    position: relative;
 }
-.presentation__container{
+.presentation__box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +14,7 @@
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .presentation__circle{
@@ -25,7 +23,7 @@
     color: var(--color-primary);
 }
 .presentation__name{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 300; 
 }
 .presentation__line{
@@ -35,7 +33,7 @@
     background-color: var(--color-primary);
 }
 .presentation__rol{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .presentation__actions{
@@ -44,8 +42,8 @@
 }
 .presentation__projects,  
 .presentation__cv{
-    font-size: 1.2rem;
-    padding: 15px;
+    font-size: 1rem;
+    padding: 10px;
     font-weight: 500;
     border-radius: 5px;
     cursor: pointer;
@@ -62,6 +60,7 @@
 .presentation__image{
     position: relative;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
@@ -76,175 +75,43 @@
     color: var(--color-primary);
 }
 .presentation__icon--left{
-    top: 0;
-    left: 0;
-    transform: translate(80%, 5%);
+    top: 5%;
+    left: 5%;
 }
 .presentation__icon--right{
-    bottom: 0;
-    right: 0;
-    transform: translate(-80%, -10%);
+    bottom:5%;
+    right: 5% ;    
 }
 
-/* .presentation{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 400px;
-}
-.presentation__intro{
-  position: relative;
-  transform: translateY(-20px);
-  text-align: left;
-}
-.presentation__greeting{
-    display: flex;
-    margin-bottom: 10px;
-}
-.presentation__hello{
-    font-size: 35px;
-    margin-left: 70px;
-    font-weight: bold;
-}
-.presentation__circle{
-    margin: 4px;
-    margin-top: 25px;
-    font-size: 10px;
-    color: var(--color-primary);
-}
-.presentation__identity{
-    display: flex;
-    align-items: baseline;
-    margin-top: 5px;
-}
-.presentation__line{
-    display: inline-block;
-    width: 90px;
-    height: 2px;
-    background-color: var(--color-primary);
-}
-.presentation__name{
-    margin: 0 0 0 5px;
-    line-height: 1;
-    font-size: 25px;
-    font-weight: 300;
-}
-.presentation__rol{
-    font-size: 25px;
-    margin-left: 70px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-.presentation__actions{
-    display: flex;
-    gap: 10px;
-    margin-top:20px;
-    margin-left: 70px;
-}
-.presentation__actions .presentation__projects, .presentation__actions .presentation__cv{
-    font-size: 16px;
-    padding: 15px;
-    font-weight: 500;
-    margin-right: 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: var(--color-letters);
-}
-.presentation__projects{
-    border: var(--color-primary);
-    background-color: var(--color-primary);
-    
-}
-.presentation__projects:hover{
-    background-color: var(--color-hover-primary);
-}
-.presentation__cv{
-    background-color: var(--background-color);
-    border:1px solid  var(--color-primary);
-}
 
-.presentation__image{
-    position: relative;
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 0;
-}
-.presentation__profile{
-    display: block;
-    max-width: 200px;
-    width: 100%;
-}
-.presentation__icon--left{
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    color: var(--color-primary);
-}
-.presentation__icon--right{
-    position: absolute;
-    top:0;
-    right: -20px;
-    color: var(--color-primary);
-}
-
-@media(max-width:375px) {
-    .presentation{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       gap: 10px;
-    }
-    .presentation__intro{
-       text-align: center;
-       transform: none;
-}
+@media(min-width:460px){
+    .presentation__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  }
     .presentation__hello{
-       font-size: 20px;
-       margin-left: 90px;
-       font-weight: bold;
-    }
-    .presentation__circle{
-       margin: 4px;
-       margin-top: 13px;
-       font-size: 7px;
-    }
-    .presentation__line{
-       width: 70px;
+        font-size: 2rem;
     }
     .presentation__name{
-       font-size: 16px;
+        font-size: 2rem;
+    }
+    .presentation__projects,  
+    .presentation__cv{
+        font-size: 1.2rem;
+        padding: 15px;
     }
     .presentation__rol{
-       font-size: 20px;
-       margin-left: 35px;
-    }
-    .presentation__actions{
-       gap: 8px;
-       margin-top:20px;
-       margin-left: 40px;
-    }
-    .presentation__actions 
-    .presentation__projects, 
-    .presentation__actions .presentation__cv{
-       font-size: 13px;
-       padding: 10px;
-       margin-right: 10px;
-    }
-     .presentation__image{
-       margin: 0 auto;
-    }
-    .presentation__profile{
-        display: block;
-        margin: 0 auto;
-        max-width: 180px;
-        width: 70%;
+        font-size: 1.8rem;
     }
     .presentation__icon--left{
-       left: -10px;
+        top: 5%;
+        left: 5%;
+       transform: translate(0, 0);
+
     }
     .presentation__icon--right{
-       right: -10px;
-       margin-top: 15px;
-    }
-} tenia lineas de codigo 162*/
+        bottom: 5%;
+        right: 5%;
+    } 
+}
