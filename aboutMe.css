@@ -1,6 +1,7 @@
 .about-me__content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .about-me{
@@ -9,6 +10,7 @@
 .about-me__experiences{
     display: flex;
     flex-direction: column;
+    order: 2;
 }
 .about-me__skills{
     position: relative;
@@ -38,6 +40,9 @@
    text-align: center;   
    font-size: 1.1rem;
    font-weight: 300;
+}
+.about-me__description{
+   order:1;
 }
 .about-me__dot{
     position: absolute;
@@ -73,3 +78,17 @@
     font-weight: 200;
     padding: 15px 0;
 } 
+
+@media(min-width:460px){
+   .about-me__content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+   .about-me__experiences{
+      order: 1;
+    }
+   .about-me__description{
+      order:2;
+    }
+}

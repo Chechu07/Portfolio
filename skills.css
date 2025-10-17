@@ -6,20 +6,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     width: 100%;
     list-style-type: none;
     color: var(--secondary-letters);
 }
 
 @media(min-width:460px) {
-   .skills__list:{
-     display:flex;
+   .skills__list{
+    display:flex;
     justify-content: space-between;
     align-items: center; 
-     width: 100%;
-} 
+    width: 100%;
+    } 
 }
