@@ -19,7 +19,6 @@
 }
 .menu__list{
    position: absolute;
-   /* display: none; */
    flex-direction: column;
    gap: 1rem;
    top: 8%;
@@ -42,7 +41,6 @@
    font-size: 1.5rem;
    cursor: pointer;
 }
-
 .menu__item{
   transition: color 0.3s;
   border-bottom: none;
@@ -59,7 +57,6 @@
    opacity: 1;
    transform: translateY(0);
    pointer-events: auto;
-   /* display: flex; */
 }
 .menu__toggle{
    font-size: 1.5rem;
