@@ -46,6 +46,6 @@
   margin-right: 0.9rem;
   color: var(--color-primary);
 }
-.training__li{
+.training__item{
   font-weight: 300;
 }
